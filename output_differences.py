@@ -1,6 +1,9 @@
 import difflib
 from colorama import Fore, Back, Style, init
 
+#paste your output in the middle of the quotation marks
+my_string = """""" 
+
 # Initialize colorama for Windows compatibility
 init(autoreset=True)
 
@@ -211,8 +214,6 @@ Your To-Do List for today:
 What would you like to do? (enter a command number of your choice 0-5): 5
 
 Thank you for using the To-Do List App. Goodbye!"""
-
-my_string = """|""" #paste your output between the quotation marks
 
 result = compare_strings(original_string, my_string)
 print(result)
